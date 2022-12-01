@@ -1,0 +1,160 @@
+
+
+body {
+  background-color: #FAFAFA;
+  
+}
+
+html{
+  font-size: 100%;
+}
+
+
+/* Login */
+.login{
+  max-width: 500px;
+  min-width: 300px;
+  max-height: 700px;
+  width: 30%;
+  height: 60%;
+ 
+  margin: 100px auto;
+  border-radius: 25px;
+}
+.title{
+  font-family: 'open sans', sans-serif;
+  padding: 2rem 0;
+  margin: 0;
+  font-size: 2rem;
+}
+button{
+  border-radius: 25px;
+  width: 80%;
+  height: 40px;
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  background: rgb(34,193,195);
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%,     rgba(253,187,45,1) 100%);
+  border: 0px;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
+input{
+  width: 80%;
+  box-sizing: border-box;
+	border: none;
+  align-content: center;
+  font-size: 1.3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+/* fin login */
+
+/* chat*/
+
+.container{
+  position: relative;
+}
+h2{
+  font-family: 'open sans', sans-serif;
+  text-align: center;
+}
+
+.chat-box{
+  box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.034),0 6.7px 5.3px rgba(0, 0, 0, 0.048),0 12.5px 10px rgba(0, 0, 0, 0.06),0 22.3px 17.9px rgba(0, 0, 0, 0.072),0 41.8px 33.4px rgba(0, 0, 0, 0.086),0 100px 80px rgba(0, 0, 0, 0.12);
+  margin:40px 50px;
+  height: 600px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.member-list{
+  margin-left: 10px;
+}
+
+.chat-content{
+  width:80%;
+  margin-top: 20px;
+  margin-left: 100px;
+  background-color: rgba(163, 189, 139, 0.637);
+  border-radius: 30px;
+}
+
+.chat-messages{
+  height: 100%;
+  
+}
+
+.send-message{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-message{
+  width:90%;
+  border-radius: 50px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+.send-button{
+  width:10%;
+  border-radius: 50px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.member{
+  padding: 10px;
+  background: #eee;
+  border:#000;
+  cursor: pointer;
+  margin: 5px 2px;
+  box-shadow: 0 8px 8px -4px lightblue;
+  border-radius: 40px;
+}
+.member.active{
+  background: rgb(143, 199, 39);
+  color:#fff;
+}
+.member:hover{
+  background: rgb(140, 194, 41);
+  color:#fff;
+}
+
+.avatar{
+  
+  padding: 3px 5px;
+  border-radius: 5px;
+  color:#000;
+}
+.avatar.self{
+  color:#000;
+}
+.message{
+  padding:5px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  color: rgb(12, 12, 11);
+  box-shadow: 0 3px 10px rgb(245, 238, 238);
+  margin: 5px 10px;
+}
+.message-data{
+  padding:10px;
+  background-color: rgb(15, 215, 241);
+  border-radius: 15px;
+}
+.message.self{
+  justify-content: end;
+}
